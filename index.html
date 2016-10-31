@@ -1,0 +1,206 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="stylesheet" href="css/animate.css" type="text/css">
+	<link rel="stylesheet" href="css/toolbar.css" type="text/css">
+	<link type="image/x-icon" rel="shortcut icon" href="images/logo.ico" sizes="20*20">
+	<script src="js/myfocus-2.0.1.min.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="js/mf-pattern/mF_kdui.css" type="text/css">
+	<script src="js/mf-pattern/mF_kdui.js" type="text/javascript"></script>
+	<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	myFocus.set({
+	       id:'picBox',
+	       pattern:'mF_kdui',//风格应用的名称
+                    time:3,//切换时间间隔(秒)
+                    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+                    width:1348,//设置图片区域宽度(像素)  这里 怎么该
+                   height:500,//设置图片区域高度(像素)
+                   txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+               });
+	</script>
+<style type="text/css"></style></head>
+<body>
+  <div id="navbar"><div class="header-top">
+		<div class="header-logo"></div>
+		<div class="header-nav">
+			<ul>
+				<li class="swing"><a  href="">首页</a></li>
+				<li class="swing"><a href="#">公司简介</a></li>
+				<li class="swing"><a href="#">新闻资讯</a></li>
+				<li class="swing"><a href="#">产品中心</a></li>
+				<li class="swing"><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+  </div></div>
+  <div id="wrapper">
+<!--头部 -->
+	<header>
+	<div class="mF_kdui_wrap"><div class="ad mF_kdui mF_kdui_picBox" id="picBox">
+	<div class="pic">
+		<ul>
+		<li ><img src="images/展示1.jpg" alt="1" text="详细描述1"></li>
+		<li ><img src="images/展示2.png" alt="2" text="详细描述2"></li>
+		<li ><img src="images/展示3.png" alt="3" text="详细描述3"></li>
+		<li ><img src="images/展示4.png" alt="4" text="详细描述4"></li>
+		</ul>
+	</div>
+	
+	</header>
+	<!--侧栏工具-->
+	<div class="toolbar">
+		<a href="#" class="toolbar-item toolbar-item-weixin">
+			<span class="toolbar-btn">
+			<i class="toolbar-icon"><img src="images/toolbar/微信.png" alt=""></i>
+			<span class="toolbar-text">公众<br>账号</span></span>
+			
+			<span class="toolbar-layer toolbar-layer-weixin"></span>
+		</a>
+		<a href="#" class="toolbar-item toolbar-item-contact">
+			<span class="toolbar-btn">
+				<i class="toolbar-icon"><img src="images/toolbar/联系我们.png" alt=""></i>
+			<span class="toolbar-text">联系<br>我们</span>
+			</span>
+			
+		</a>
+		<a href="#" class="toolbar-item toolbar-item-top">
+			<span class="toolbar-btn"><i class="toolbar-icon"><img src="images/toolbar/返回顶部.png" alt=""></i>
+			<span class="toolbar-text">返回<br>顶部</span></span>
+			
+		</a>
+	</div>
+	<!--新闻资讯 -->
+	<div class="new">
+		<div class="new-top">
+			<div class="new-top-title"><span></span>新闻资讯<span></span></div>
+			<div class="new-top-more rubberBand"><a href="#">更多&nbsp;<span>></span></a></div>
+		</div>
+		<div class="new-main">
+			<div class="new-main-img"><img src="images/new.jpg" alt="">
+			<p><span >这里是标题</span><br />
+                                                               <span>这里是具体内容</span>
+                                                               </p></div>
+			<div class="new-main-article">
+				<h3>关于公司的新闻巴拉巴拉</h3>
+				<p>新闻内容巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉<br>
+巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉<br>
+巴拉巴拉巴拉巴拉巴拉 . . .</p>
+<ul>
+	<li><a href="#">新闻巴拉巴拉巴拉巴拉             2016-07-26</a></li>
+	<li><a href="#">新闻巴拉巴拉巴拉巴拉             2016-07-26</a></li>
+	<li><a href="#">新闻巴拉巴拉巴拉巴拉             2016-07-26</a></li>
+	<li><a href="#">新闻巴拉巴拉巴拉巴拉             2016-07-26</a></li>
+</ul>
+			</div>
+		</div>
+	</div>
+	<!--产品中心 -->
+	<div class="product">
+		<div class="new-top">
+			<div class="new-top-title"><span></span>产品中心<span></span></div>
+			<div class="new-top-more rubberBand"><a href="#">更多&nbsp;<span>></span></a></div>
+		</div>
+		<div id="show_product">
+        <div class="exhibition"><img src="images/product/1.jpg" alt=""></div>
+        <ul class="rollbar">
+            <li class="control" value="left" onclick="changeleft()"><img src="images/product/左左.png" alt=""></li>
+            <li>
+                <ul class="wrapper">
+                    <div id="pictures">
+                        <li class="one big" onclick="get()"><img src="images/product/2.png" alt=""></li>
+                        <li class="two big" onclick="get()"><img src="images/product/3.jpg" alt=""></li>
+                        <li class="three big" onclick="get()"><img src="images/product/4.jpg" alt=""></li>
+                        <li class="four big" onclick="get()"><img src="images/product/5.jpg" alt=""></li>
+                        <li class="five big" onclick="get()"><img src="images/product/5.jpg" alt=""></li>
+                    </div>
+                </ul>
+            </li>
+            <li class="control" value="right" onclick="changeright()"><img src="images/product/右右.png" alt=""></li>
+        </ul>
+    </div>
+	</div>
+	<!--关于我们 -->
+	<div class="about">
+		<div class="new-top">
+			<div class="new-top-title"><span></span>关于我们<span></span></div>
+			<div class="new-top-more rubberBand"><a href="#">更多&nbsp;<span>></span></a></div>
+		</div>
+		<div class="about-img"><img src="images/about.png" alt="">
+		<p>
+		                                      <span >这里是标题</span><br />
+                                                               <span>这里是具体内容</span>
+                                                               </p></div>
+		<div class="about-main">
+			<div class="about-main-img"></div>
+			<div class="about-main-article">
+			<p>&nbsp;&nbsp;湖南省湘潭市社会福利厂有限公司创建于1986<br>年（前身为湘潭市社会福利厂，于2015年改制），<br>至今已有30年的历史。它位于湘潭市雨湖区，比邻<br>火车站和长途汽车站，交通十分便利。该公司是湘<br>潭市集生产、加工、销售劳动防护用品于一体的民<br>政福利专业企业。目前拥有一栋3000平方米生产加<br>工综合厂房和一个销售经营门店，从业人员86人。
+</p>
+			</div>
+	</div>
+	</div>
+	<!--footer -->
+	<footer>
+		<div class="footer-left">
+			<ul>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">公司发展</a></li>
+			<li><a href="#">公司文化</a></li>
+			<li><a href="#">联系我们</a></li>
+			</ul>
+			<ul>
+			<li><a href="#">关于我们</a></li>
+			<li><a href="#">公司发展</a></li>
+			<li><a href="#">公司文化</a></li>
+			<li><a href="#">联系我们</a></li>
+			</ul>
+		</div>
+		<div class="footer-attention"><p>关注我们</p>
+			<ul>
+				<li><img src="images/qq.png" alt=""></li>
+				<li><img src="images/weixin.png" alt=""></li>
+				<li><img src="images/weibo.png" alt=""></li>
+			</ul>
+		</div>
+		<div class="footer-right">
+			<h3>服务热线</h3>
+			<p>400-6088-33<br>
+			工作日：9:00-18:00<br>
+			周末及节假日：9:00-18:00</p>
+		</div>
+		<div class="copyright"><span>©2016 www.xtshflc.com All Rights Reserved</span></div>
+	</footer>
+  </div>
+	<script type="text/javascript">
+    var pictures = document.getElementById("pictures");
+    var sum = 0;
+
+    function changeleft() {
+        sum = sum + 110;
+        pictures.style.transform = "translate(" + sum + "px,0px)";
+    }
+
+    function changeright() {
+        sum = sum - 110;
+        pictures.style.transform = "translate(" + sum + "px,0px)";
+    }
+    $(function() {
+        $(".big img").click(function() {
+            //获得图片的src属性
+            var url = $(this).attr("src");
+            //将图片路径赋值到文本框中
+            //document.title = url;这是啥不用管
+            $(".exhibition img").animate({opacity: 0}, 400,function(){
+            $(".exhibition img").attr("src",url);
+            $(".exhibition img").animate({opacity: 1}, 400);
+            });
+           
+            
+        });
+
+
+    });
+    </script>
+
+</body></html>
